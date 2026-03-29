@@ -5,16 +5,23 @@ import { HowItWorks } from "@/components/sections/HowItWorks";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { Savings } from "@/components/sections/Savings";
 import { Testimonials } from "@/components/sections/Testimonials";
+import { PeaceOfMind } from "@/components/sections/PeaceOfMind";
+import { FAQ } from "@/components/sections/FAQ";
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden">
+    <main>
       <Hero />
       <About />
       <Testimonials />
       <HowItWorks />
       <WhyUs />
       <Savings />
+      <PeaceOfMind />
+      <FAQ
+        variant="boxed"
+        description="Find quick answer to common questions about Renewable"
+      />
     </main>
   );
 }

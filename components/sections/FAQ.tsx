@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import { Accordion } from '@/components/ui/Accordion';
+import { cn } from "@/lib/utils";
 
 const faqItems = [
   {
@@ -25,22 +26,27 @@ const faqItems = [
   }
 ];
 
-export const FAQ = () => {
+export const FAQ = ({
+  description = "Find quick answers to common questions about Renewable.",
+  variant = "standard"
+}: {
+  description?: string;
+  variant?: "standard" | "boxed";
+}) => {
   return (
     <section className="bg-white py-32 px-6">
-      <div className="max-w-4xl mx-auto">
+      <div className={cn("mx-auto", variant === "boxed" ? "max-w-3xl" : "max-w-4xl")}>
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-black/10 bg-[#F5F7FA] mb-8">
             <span className="w-2.5 h-2.5 rounded-full bg-primary" />
             <span className="text-black/80 text-sm font-semibold">FAQ</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold tracking-tighter text-black leading-[1.05] mb-6">
+          <h2 className=" text-[44px] md:text-[56px] font-bold tracking-tighter text-black leading-[1.05] mb-6">
             Frequently Asked Questions
           </h2>
-          <p className="text-black/60 text-lg">Find quick answers to common questions about Renewable.</p>
+          {description && <p className="text-black/60 text-lg">{description}</p>}
         </div>
-        
-        <Accordion items={faqItems} />
+        <Accordion items={faqItems} variant={variant} />
       </div>
     </section>
   );

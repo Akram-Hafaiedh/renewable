@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="bg-black pt-32 pb-10 px-6 border-t border-white/10">
+    <footer className="bg-texture pt-32 pb-10 px-6 border-t border-white/10">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-start gap-16">
         <div className="lg:w-1/2">
           <h2 className="text-5xl md:text-7xl font-bold tracking-tighter text-white leading-[1.05] mb-8 max-w-[15ch]">
@@ -18,7 +18,7 @@ export const Footer = () => {
             <Button size="lg" variant="primary" className="px-10">Contact Us</Button>
           </Link>
         </div>
-        
+
         <div className="lg:w-1/2 flex flex-col sm:flex-row gap-16 lg:justify-end">
           <div className="flex flex-col gap-4">
             <p className="text-white/40 font-bold mb-4 tracking-widest uppercase text-sm">Navigation</p>
@@ -46,10 +46,10 @@ export const Footer = () => {
         </div>
         <p>© 2026 Renewable. All rights reserved.</p>
         <div className="flex items-center gap-1.5 flex-wrap justify-center md:justify-end">
-          <p>Designed & Built by</p>
-          <a 
-            href="https://portfolio-six-mu-c3zpt9l3gd.vercel.app/fr" 
-            target="_blank" 
+          <p>Built by</p>
+          <a
+            href="https://portfolio-six-mu-c3zpt9l3gd.vercel.app/fr"
+            target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-primary transition-colors font-semibold underline underline-offset-4 decoration-white/20 hover:decoration-primary"
           >

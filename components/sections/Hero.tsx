@@ -59,8 +59,8 @@ const allLogos = [...logos, ...logos];
 
 export const Hero = () => {
   return (
-    <section className="relative pt-20 md:pt-24 pb-12 md:pb-24 px-6 overflow-hidden">
-      <BackgroundTexture />
+    <section className="relative pt-20 md:pt-24 pb-12 md:pb-24 px-6 overflow-hidden bg-texture">
+      {/* <BackgroundTexture /> */}
       <div className="relative z-10 max-w-7xl mx-auto">
 
         {/* Headline */}
@@ -102,10 +102,10 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="bg-[#111111] border border-white/[0.06] rounded-[24px] overflow-hidden flex flex-col lg:flex-row">
+          <div className="bg-black border border-white/[0.06] rounded-[24px] overflow-hidden flex flex-col lg:flex-row p-7">
 
             {/* Left panel */}
-            <div className="lg:w-[42%] p-7 md:p-9 flex flex-col justify-between gap-10">
+            <div className="lg:w-[42%] py-7 px-3 flex flex-col justify-between gap-10">
               <div>
                 <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-white/10 bg-white/[0.04] mb-5">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />

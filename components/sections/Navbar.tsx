@@ -4,6 +4,38 @@ import { Button } from "@/components/ui/Button";
 import { Menu, X, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
+
+const navLinks = [
+  { href: "/#about", label: "About" },
+  { href: "/#testimonials", label: "Testimonials" },
+  { href: "/#how-it-works", label: "How It Works" },
+  { href: "/#why-us", label: "Why Us" },
+  { href: "/#savings", label: "Savings" },
+];
+
+const FlipLink = ({ href, label }: { href: string; label: string }) => {
+  return (
+    <Link
+      href={href}
+      className="relative overflow-hidden group flex flex-col items-center"
+      style={{ height: "1.2em" }}
+    >
+      {/* Original text */}
+      <span
+        className="block text-white/60 text-sm font-semibold transition-all duration-300 ease-in-out group-hover:-translate-y-full group-hover:opacity-0"
+      >
+        {label}
+      </span>
+      {/* Flipped green text */}
+      <span
+        className="block text-primary text-sm font-semibold absolute top-full transition-all duration-300 ease-in-out group-hover:-translate-y-full group-hover:opacity-100 opacity-0"
+      >
+        {label}
+      </span>
+    </Link>
+  );
+};
+
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -27,13 +59,11 @@ export const Navbar = () => {
             Renewable
           </span>
         </Link>
-        
+
         <div className="hidden md:flex items-center gap-10 bg-[#0A0A0A]/80 backdrop-blur-md px-10 py-3.5 rounded-full border border-white/10 shadow-xl">
-          <Link href="/#about" className="text-white/60 hover:text-white text-sm font-semibold transition-all hover:scale-105">About</Link>
-          <Link href="/#testimonials" className="text-white/60 hover:text-white text-sm font-semibold transition-all hover:scale-105">Testimonials</Link>
-          <Link href="/#how-it-works" className="text-white/60 hover:text-white text-sm font-semibold transition-all hover:scale-105">How It Works</Link>
-          <Link href="/#why-us" className="text-white/60 hover:text-white text-sm font-semibold transition-all hover:scale-105">Why Us</Link>
-          <Link href="/#savings" className="text-white/60 hover:text-white text-sm font-semibold transition-all hover:scale-105">Savings</Link>
+          {navLinks.map((link) => (
+            <FlipLink key={link.href} href={link.href} label={link.label} />
+          ))}
         </div>
 
         <div className="hidden md:flex">
