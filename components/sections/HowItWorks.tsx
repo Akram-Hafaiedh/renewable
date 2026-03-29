@@ -28,25 +28,40 @@ export const HowItWorks = () => {
           </div>
         </div>
 
-        <div className="lg:w-2/3 flex flex-col gap-6">
-          {steps.map((step, i) => (
-            <motion.div 
-              key={i}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-black text-white p-10 md:p-14 rounded-[40px] flex flex-col md:flex-row md:items-start gap-8 shadow-xl"
-            >
-              <div className="text-primary text-4xl md:text-5xl font-bold tracking-tighter shrink-0">
-                {step.num}
-              </div>
-              <div>
-                <h3 className="text-2xl md:text-3xl font-bold mb-4 tracking-tight">{step.title}</h3>
-                <p className="text-white/60 text-lg leading-relaxed">{step.desc}</p>
-              </div>
-            </motion.div>
-          ))}
+        <div className="lg:w-2/3">
+          <motion.div 
+            className="flex flex-col gap-6"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={{
+              hidden: {},
+              visible: {
+                transition: {
+                  staggerChildren: 0.15,
+                }
+              }
+            }}
+          >
+            {steps.map((step, i) => (
+              <motion.div 
+                key={i}
+                variants={{
+                  hidden: { opacity: 0, y: 50 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+                }}
+                className="bg-black text-white p-10 md:p-14 rounded-[40px] flex flex-col md:flex-row md:items-start gap-8 shadow-xl"
+              >
+                <div className="text-primary text-4xl md:text-5xl font-bold tracking-tighter shrink-0">
+                  {step.num}
+                </div>
+                <div>
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4 tracking-tight">{step.title}</h3>
+                  <p className="text-white/60 text-lg leading-relaxed">{step.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </div>
     </section>

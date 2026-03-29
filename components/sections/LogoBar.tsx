@@ -1,20 +1,22 @@
 "use client";
 import React from "react";
+import { Marquee } from "@/components/ui/Marquee";
 
-const logos = ["Acme Corp", "Vision Eco", "Horizon Energy", "Global Solar", "Nexus Clean"];
+const logos = ["Horizon Energy", "Global Solar", "Horizon Clean", "Renew Corp", "Vision Eco", "Horizon Energy", "Global Solar", "Horizon Clean", "Renew Corp", "Vision Eco"];
 
 export const LogoBar = () => {
   return (
-    <section className="bg-black py-16 border-b border-white/5 relative z-10">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col items-center">
-        <p className="text-white/40 text-sm font-medium tracking-widest uppercase mb-8">Trusted by</p>
-        <div className="flex flex-wrap items-center justify-center gap-12 md:gap-24 opacity-50 transition-all w-full">
-          {logos.map((logo, i) => (
-            <div key={i} className="text-xl md:text-3xl font-extrabold tracking-tighter text-white/50 hover:text-white transition-colors cursor-default">
-              {logo}
-            </div>
-          ))}
-        </div>
+    <section className="bg-black py-12 md:py-20 border-b border-white/5 relative z-10 overflow-hidden">
+      <div className="w-full">
+        <Marquee speed={35}>
+          <div className="flex items-center w-max shrink-0 px-12">
+            {logos.map((logo, i) => (
+              <div key={i} className="text-2xl md:text-3xl font-extrabold tracking-tighter text-white/50 hover:text-white transition-all duration-300 cursor-default mx-12 md:mx-20 uppercase">
+                {logo}
+              </div>
+            ))}
+          </div>
+        </Marquee>
       </div>
     </section>
   );

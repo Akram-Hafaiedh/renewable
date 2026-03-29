@@ -1,13 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #9AF066;
-  --color-primary-dark: #82de50;
+  --color-primary: #B6F09C;
+  --color-primary-dark: #9add7c;
   --font-inter: var(--font-inter);
+  --font-display: var(--font-bricolage);
 }
 
 :root {
-  --background: #000000;
+  --background: #060606;
   --foreground: #ffffff;
 }
 
@@ -20,7 +21,15 @@ body {
 
 /* Custom background texture utility for the ribbed vertical look */
 .bg-texture {
-  background-color: #050505;
-  background-image: linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
-  background-size: 60px 100%;
+  background-color: #0A0A0A;
+  background-image: repeating-linear-gradient(90deg,
+      rgba(255, 255, 255, 0.04) 0px,
+      rgba(255, 255, 255, 0.04) 1px,
+      transparent 1px,
+      transparent 9px);
+}
+
+.mask-x {
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
 }
