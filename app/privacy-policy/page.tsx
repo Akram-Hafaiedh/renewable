@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Renewable",
-  description: "Learn how Renewable collects, uses, and protects your personal information.",
+  title: "Privacy Policy - Elyssa Energy",
+  description: "Learn how Elyssa Energy collects, uses, and protects your personal information.",
 };
 
 export default function PrivacyPolicy() {
@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-3xl font-bold text-white mb-6 tracking-tight">1. Introduction</h2>
             <p>
-              At Renewable, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you visit our website or use our services.
+              At Elyssa Energy, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you visit our website or use our services.
             </p>
           </section>
 
@@ -64,7 +64,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-3xl font-bold text-white mb-6 tracking-tight">5. Your Rights</h2>
             <p>
-              You have the right to access, correct, or delete your personal information. If you have any questions or requests regarding your data, please contact us at support@renewable.com.
+              You have the right to access, correct, or delete your personal information. If you have any questions or requests regarding your data, please contact us at support@elyssaenergy.com.
             </p>
           </section>
 

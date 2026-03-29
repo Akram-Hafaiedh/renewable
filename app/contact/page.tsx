@@ -102,6 +102,7 @@ export default function Contact() {
                   src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=2672&auto=format&fit=crop"
                   alt="Solar panel installation"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
@@ -114,7 +115,7 @@ export default function Contact() {
 
       <FAQ
         variant="boxed"
-        description="Find quick answers to common questions about Renewable."
+        description="Find quick answers to common questions about Elyssa Energy."
       />
     </main>
   );

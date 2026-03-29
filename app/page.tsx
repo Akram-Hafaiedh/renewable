@@ -20,7 +20,7 @@ export default function Home() {
       <PeaceOfMind />
       <FAQ
         variant="boxed"
-        description="Find quick answer to common questions about Renewable"
+        description="Find quick answer to common questions about Elyssa Energy"
       />
     </main>
   );

@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Use - Renewable",
-  description: "Read our terms of use for using the Renewable website and services.",
+  title: "Terms of Use - Elyssa Energy",
+  description: "Read our terms of use for using the Elyssa Energy website and services.",
 };
 
 export default function TermsOfUse() {
@@ -41,14 +41,14 @@ export default function TermsOfUse() {
           <section>
             <h2 className="text-3xl font-bold text-white mb-6 tracking-tight">3. Intellectual Property</h2>
             <p>
-              All content on this website, including text, graphics, logos, and images, is the property of Renewable or its content suppliers and is protected by copyright and other intellectual property laws. You may not reproduce, distribute, or create derivative works from our content without our express written permission.
+              All content on this website, including text, graphics, logos, and images, is the property of Elyssa Energy or its content suppliers and is protected by copyright and other intellectual property laws. You may not reproduce, distribute, or create derivative works from our content without our express written permission.
             </p>
           </section>
 
           <section>
             <h2 className="text-3xl font-bold text-white mb-6 tracking-tight">4. Limitation of Liability</h2>
             <p>
-              Renewable is not liable for any direct, indirect, incidental, or consequential damages resulting from the use of our services or the inability to access our website. We provide our services on an "as-is" and "as-available" basis.
+              Elyssa Energy is not liable for any direct, indirect, incidental, or consequential damages resulting from the use of our services or the inability to access our website. We provide our services on an "as-is" and "as-available" basis.
             </p>
           </section>
 

@@ -16,8 +16,8 @@ const bricolage = Bricolage_Grotesque({
 })
 
 export const metadata: Metadata = {
-  title: "Renewable - Free Framer Template",
-  description: "Renewable is a free Framer template for clean energy and sustainability brands.",
+  title: "Elyssa Energy",
+  description: "Elyssa Energy provides clean, sustainable solar solutions for modern homes.",
 };
 
 export default function RootLayout({
@@ -29,6 +29,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${inter.variable} ${bricolage.variable} antialiased scroll-smooth`}
+      data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col font-sans bg-black text-white selection:bg-primary selection:text-black">
         <Navbar />

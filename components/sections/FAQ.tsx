@@ -5,15 +5,15 @@ import { cn } from "@/lib/utils";
 
 const faqItems = [
   {
-    title: "What does Renewable do?",
-    content: "Renewable is a clean energy company that provides premium solar panel installation and energy solutions for homeowners looking to reduce their energy costs."
+    title: "What does Elyssa Energy do?",
+    content: "Elyssa Energy is a clean energy company that provides premium solar panel installation and energy solutions for homeowners looking to reduce their energy costs."
   },
   {
     title: "How can I get started?",
     content: "You can start by filling out our contact form for a free consultation. Our team will review your energy usage and roof setup to provide a custom estimate."
   },
   {
-    title: "Who is Renewable built for?",
+    title: "Who is Elyssa Energy built for?",
     content: "We currently serve residential homeowners who own their property and are looking for sustainable, cost-effective energy alternatives."
   },
   {
@@ -21,13 +21,13 @@ const faqItems = [
     content: "From consultation to final grid connection, a typical solar installation takes between 4 to 8 weeks depending on local permitting and utility approvals."
   },
   {
-    title: "Is Renewable secure and reliable?",
+    title: "Is Elyssa Energy secure and reliable?",
     content: "Yes, we use tier-1 solar equipment backed by 25-year warranties, and all our installations are performed by certified professionals."
   }
 ];
 
 export const FAQ = ({
-  description = "Find quick answers to common questions about Renewable.",
+  description = "Find quick answers to common questions about Elyssa Energy.",
   variant = "standard"
 }: {
   description?: string;

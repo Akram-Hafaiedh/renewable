@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
+import { Sun } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -37,14 +38,14 @@ export const Footer = () => {
 
       <div className="max-w-7xl mx-auto mt-32 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-white/40 text-sm font-medium">
         <div className="flex items-center gap-2">
-          <div className="w-5 h-5 rounded-full bg-primary flex items-center justify-center">
-            <div className="w-2 h-2 bg-black rounded-full" />
+          <div className="w-6 h-6 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
+            <Sun className="w-3.5 h-3.5 text-primary" strokeWidth={2.5} />
           </div>
           <span className="text-base font-bold tracking-tight text-white">
-            Renewable
+            Elyssa Energy
           </span>
         </div>
-        <p>© 2026 Renewable. All rights reserved.</p>
+        <p>© 2026 Elyssa Energy. All rights reserved.</p>
         <div className="flex items-center gap-1.5 flex-wrap justify-center md:justify-end">
           <p>Built by</p>
           <a

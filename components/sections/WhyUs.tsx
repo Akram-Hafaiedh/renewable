@@ -42,7 +42,7 @@ const benefits = [
 
 export const WhyUs = () => {
   return (
-    <section id="why-renewable" className="bg-texture py-24 px-6 overflow-hidden">
+    <section id="why-us" className="bg-texture py-24 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col gap-10">
 
         {/* Card 1 — Why Us */}
@@ -60,11 +60,11 @@ export const WhyUs = () => {
               <div>
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 mb-6">
                   <span className="w-2 h-2 rounded-full bg-primary" />
-                  <span className="text-white/70 text-xs font-bold uppercase tracking-widest">Why Renewable</span>
+                  <span className="text-white/70 text-xs font-bold uppercase tracking-widest">Why Elyssa Energy</span>
                 </div>
 
                 <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-[-0.03em] text-white leading-[1.1] mb-8">
-                  Why Homeowners<br />Choose Renewable
+                  Why Homeowners<br />Choose Elyssa Energy
                 </h2>
 
                 <div className="flex flex-col mb-8">

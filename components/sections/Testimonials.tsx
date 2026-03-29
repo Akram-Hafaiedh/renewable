@@ -68,7 +68,7 @@ export const Testimonials = () => {
               <div>
                 <Stars />
                 <p className="text-white/80 text-sm font-medium leading-[1.7]">
-                  "Renewable handled design, permits, and installation smoothly. We just enjoy monthly savings."
+                  "Elyssa Energy handled design, permits, and installation smoothly. We just enjoy monthly savings."
                 </p>
               </div>
               <div className="flex items-center gap-3 mt-6 pt-5 border-t border-white/[0.06]">

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/Button";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight, Sun } from "lucide-react";
 import Link from "next/link";
 
 
@@ -51,12 +51,12 @@ export const Navbar = () => {
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'backdrop-blur-xl bg-black/70 border-b border-white/10 py-2' : 'bg-transparent py-4'}`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 cursor-pointer transition-transform hover:scale-105">
-          <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-            <div className="w-3 h-3 bg-black rounded-full" />
+        <Link href="/" className="flex items-center gap-2 cursor-pointer transition-transform hover:scale-105 group">
+          <div className="w-8 h-8 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+            <Sun className="w-4 h-4 text-primary" strokeWidth={2.5} />
           </div>
-          <span className="text-xl font-bold tracking-tight text-white hover:text-primary transition-colors">
-            Renewable
+          <span className="text-xl font-bold tracking-tight text-white group-hover:text-primary transition-colors">
+            Elyssa Energy
           </span>
         </Link>
 

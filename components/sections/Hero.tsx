@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { BackgroundTexture } from '../ui/BackgroundTexture';
+import Link from 'next/link';
 
 const logos = [
   {
@@ -82,12 +83,14 @@ export const Hero = () => {
           transition={{ duration: 0.7, delay: 0.18, ease: "easeOut" }}
           className="flex flex-row items-center gap-3 mb-9"
         >
-          <Button
-            variant="primary"
-            className="px-5 py-2.5 rounded-full text-sm font-bold gap-1.5 group inline-flex items-center"
-          >
-            Get Started <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-          </Button>
+          <Link href="/contact">
+            <Button
+              variant="primary"
+              className="px-5 py-2.5 rounded-full text-sm font-bold gap-1.5 group inline-flex items-center"
+            >
+              Get Started <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+            </Button>
+          </Link>
           <Button
             variant="outline"
             className="px-5 py-2.5 rounded-full text-sm font-bold bg-transparent border-white/20 hover:bg-white/5 gap-1.5 group text-white inline-flex items-center"

@@ -18,7 +18,7 @@ export const About = () => {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-black/10 bg-black/[0.03] mb-8">
               <span className="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
-              <span className="text-black/60 text-[10px] font-bold uppercase tracking-[0.2em]">About Renewable</span>
+              <span className="text-black/60 text-[10px] font-bold uppercase tracking-[0.2em]">About Elyssa Energy</span>
             </div>
             
             <div className="w-full max-w-[400px]">
@@ -61,10 +61,10 @@ export const About = () => {
               transition={{ duration: 0.8, delay: 0.1 }}
             >
               <h2 className="font-display text-[44px] md:text-[56px] font-extrabold tracking-[-0.03em] leading-[1.05] mb-8">
-                At Renewable, we make it easy for homeowners to own power through solar.
+                At Elyssa Energy, we make it easy for homeowners to own power through solar.
               </h2>
               <p className="text-black/60 text-lg md:text-xl leading-relaxed max-w-2xl font-medium">
-                Renewable is a clean energy company focused on helping homeowners take control of their power through premium solar solutions. By combining modern technology and reliable installation, we make it easier to lower energy costs and build energy independence with confidence.
+                Elyssa Energy is a clean energy company focused on helping homeowners take control of their power through premium solar solutions. By combining modern technology and reliable installation, we make it easier to lower energy costs and build energy independence with confidence.
               </p>
             </motion.div>
 
