@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicy() {
   return (
-    <main className="overflow-x-hidden pt-32 md:pt-48 pb-20 px-6 font-sans bg-texture">
+    <main className="relative min-h-screen overflow-x-hidden pt-32 md:pt-48 pb-20 px-6 font-sans bg-texture">
       <div className="absolute inset-0 bg-black/60 pointer-events-none" />
       
       <div className="max-w-4xl mx-auto relative z-10">
